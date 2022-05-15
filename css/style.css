@@ -22,6 +22,7 @@
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .header1 {
@@ -120,6 +121,7 @@
 .weather {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .weather ul {
@@ -148,4 +150,84 @@
     padding-left: 5px;
 }
 
-/* end HEADER RULES */
+/*end HEADER RULES*/
+
+/*start MAIN-NAVBAR RULES*/
+
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.main-navbar ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.main-navbar ul li {
+    padding: 6px;
+}
+
+.main-navbar ul li a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.main-navbar ul li a:hover {
+    color: #005ac8;
+}
+
+.main-navbar ul li:first-child {
+    position: absolute;
+    left: 10px;
+}
+
+#citta:link, #citta:hover, #citta:visited {
+    color: #ee3840;
+}
+
+/*end MAIN-NAVBAR RULES*/
+
+/*start NEWS-NAVBAR RULES*/
+
+.news-navbar {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    border-top: 1px solid #eeeeee;
+}
+
+.news-navbar ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.news-navbar ul li {
+    padding: 6px;
+}
+
+.news-navbar ul li a:link, a:visited {
+    text-decoration: none;
+    color: #005ac8;
+}
+
+.news-navbar ul li a:hover {
+    color: darkblue;
+}
+
+/*end NEWS-NAVBAR RULES*/
