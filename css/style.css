@@ -50,11 +50,15 @@
     position: relative;
 }
 
-.navbar1 a:link, a:visited, a:hover {
+.navbar1 a:link, a:visited {
     text-decoration: none;
     font-family: serif;
     color: black;
     font-size: 17px;
+}
+
+.navbar1 a:hover {
+    text-decoration: underline;
 }
 
 #menu-primary {
@@ -110,16 +114,38 @@
     font-weight: bold;
     color: #4f9eff;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
 }
 
 .weather ul {
     list-style-type: none;
+}
+
+.weather ul li {
+    float: left;
+    font-family: Helvetica, sans-serif;
     font-size: 14px;
+}
+
+.weather ul li a:link, a:visited {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
     color: darkgrey;
 }
 
-.weather a:link, a:hover, a:visited {
-    text-decoration: none;
+.weather ul li a:hover {
+    color: #005ac8;
+    font-size: 14px;
+}
+
+.weather ul li:last-child {
+    padding-top: 2px;
+    padding-left: 5px;
 }
 
 /* end HEADER RULES */
