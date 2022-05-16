@@ -30,7 +30,7 @@
     color: #4f9eff;
 }
 
-.header1 a:link, a:visited, a:hover {
+.header1 a:link, .header1 a:visited, .header1 a:hover {
     text-decoration: none;
     color: #005ac8;
 }
@@ -42,7 +42,7 @@
     position: relative;
 }
 
-.navbar1 a:link, a:visited {
+.navbar1 a:link, .navbar1 a:visited {
     text-decoration: none;
     font-family: serif;
     color: black;
@@ -125,7 +125,7 @@
     font-size: 14px;
 }
 
-.weather ul li a:link, a:visited {
+.weather ul li a:link, .weather ul li a:visited {
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     color: darkgrey;
@@ -168,7 +168,7 @@
     padding: 6px;
 }
 
-.main-navbar ul li a:link, a:visited {
+.main-navbar ul li a:link, .main-navbar ul li a:visited {
     text-decoration: none;
     color: black;
 }
@@ -254,6 +254,11 @@
 
 /*start LEFT ARTICLE RULES*/
 
+.left-article {
+    border-bottom: 1px solid #dddddd;
+    margin-top: 16px;
+}
+
 .article-content {
     padding:16px 15px;
 }
@@ -274,6 +279,15 @@
     margin: 15px 0;
 }
 
+.article-title a:link, .article-title a:hover, .article-title a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.article-title a:hover {
+    color: #5f5f5f;
+}
+
 .abstract {
     font-size: 18px;
     margin-bottom: 15px;
@@ -292,7 +306,7 @@
 }
 
 .related-articles {
-    margin: 10px 0;
+    margin: 10px 0 0;
 }
 
 .related-articles a {
@@ -301,7 +315,7 @@
     padding-bottom: 5px;
 }
 
-.related-articles a:link, a:visited {
+.related-articles a:link, .related-articles a:visited {
     text-decoration: none;
 }
 
