@@ -212,7 +212,7 @@
     padding: 6px;
 }
 
-.news-navbar ul li a:link, a:visited {
+.news-navbar a:link, .news-navbar a:visited {
     text-decoration: none;
     color: #005ac8;
 }
