@@ -233,6 +233,7 @@
     margin-right: auto;
     padding: 22px 22px 100px;
     border: 1px solid #dddddd;
+    overflow: auto;
 }
 
 #advertise {
@@ -243,10 +244,11 @@
 .left-container {
     width: 660px;
     margin-right: 20px;
+    float:left;
 }
 
 .right-container {
-    width: 300px;
+    width: 298px;
     float: left;
 }
 
@@ -406,3 +408,45 @@
 }
 
 /* end LEFT SECONDARY ARTICLE RULES */
+
+/* start RIGHT ARTICLE RULES */
+
+.right-group {
+    margin-top: 16px;
+}
+
+.right-group-title {
+    font-family: Roboto, sans-serif;
+    font-stretch: condensed;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #005ac8;
+    width: 160px;
+    display: block;
+}
+
+.right-article {
+    margin-bottom: 20px;
+}
+
+.right-article-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: condensed;
+}
+
+.right-article-title a:link, .right-article-title a:hover, .right-article-title a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.right-article-title a:hover {
+    color: #5f5f5f;
+}
+
+.right-abstract {
+    font-size: 18px;
+    font-stretch: condensed;
+}
+
+/* end RIGHT ARTICLE RULES */
