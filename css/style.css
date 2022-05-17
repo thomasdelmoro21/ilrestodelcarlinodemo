@@ -330,4 +330,36 @@
     margin-right: 5px;
 }
 
-/*end LEFT ARTICLE RULES*/
+/* end LEFT ARTICLE RULES*/
+
+/* start LEFT SECONDARY ARTICLE RULES */
+
+.left-secondary-article {
+    border-bottom: 1px solid #dddddd;
+    margin-top: 16px;
+}
+
+.left-secondary-article img {
+    float: left;
+    width: 330px;
+}
+
+.secondary-article-content {
+    padding:16px 15px;
+    float: left;
+    width: 300px;
+}
+
+.secondary-article-title {
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: condensed;
+    margin: 15px 0;
+}
+
+.secondary-article-title a:link, .secondary-article-title a:hover, .secondary-article-title a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* start LEFT SECONDARY ARTICLE RULES */
