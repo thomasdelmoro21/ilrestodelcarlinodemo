@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+/* start ADVERTISE RULES */
+
+.advertise {
+    display: flex;
+    justify-content: center;
+}
+
+/* start ADVERTISE RULES */
+
 /* start HEADER RULES */
 
 .header-container {
@@ -426,13 +435,14 @@
 }
 
 .right-article {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .right-article-title {
     font-size: 20px;
     font-weight: 700;
     font-stretch: condensed;
+    margin-bottom: 10px;
 }
 
 .right-article-title a:link, .right-article-title a:hover, .right-article-title a:visited {
@@ -450,3 +460,23 @@
 }
 
 /* end RIGHT ARTICLE RULES */
+
+/* start FOOTER RULES */
+
+#page-footer {
+    width: 100%;
+    height: 250px;
+}
+
+#footer-content {
+    background-color: #005ac7;
+    height: 202px;
+    padding: 45px 460px 32px 0;
+}
+
+#footer-informations {
+    height:48px;
+    background-color: #0250b0;
+}
+
+/* start FOOTER RULES */
