@@ -334,32 +334,75 @@
 
 /* start LEFT SECONDARY ARTICLE RULES */
 
-.left-secondary-article {
+.left-small-article {
     border-bottom: 1px solid #dddddd;
     margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.left-secondary-article img {
-    float: left;
+.left-small-article img {
+    display: block;
     width: 330px;
+    margin-bottom: 15px;
 }
 
-.secondary-article-content {
-    padding:16px 15px;
-    float: left;
-    width: 300px;
+.small-article-content {
+    padding-left: 15px;
+    display: block;
+    width: 315px;
+    margin-bottom: 15px;
 }
 
-.secondary-article-title {
+.small-category {
+    font-size: 14px;
+    font-stretch: condensed;
+    font-weight: bold;
+    color: #005ac8;
+    letter-spacing: 2px;
+}
+
+.small-article-title {
     font-size: 24px;
     font-weight: 700;
     font-stretch: condensed;
-    margin: 15px 0;
+    margin: 5px 0 15px;
 }
 
-.secondary-article-title a:link, .secondary-article-title a:hover, .secondary-article-title a:visited {
+.small-article-title a:link, .small-article-title a:hover, .small-article-title a:visited {
     text-decoration: none;
     color: black;
 }
 
-/* start LEFT SECONDARY ARTICLE RULES */
+.small-abstract {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.small-related-articles {
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.small-related-articles a {
+    display: block;
+    color: #393939;
+    padding-bottom: 5px;
+}
+
+.small-related-articles a:link, .small-related-articles a:visited {
+    text-decoration: none;
+}
+
+.small-related-articles a:hover {
+    text-decoration: underline;
+    color: #005ac8;
+}
+
+.small-related-articles span {
+    font-weight: 700;
+    color: #005ac8;
+    margin-right: 5px;
+}
+
+/* end LEFT SECONDARY ARTICLE RULES */
