@@ -7,6 +7,14 @@
     <meta name="keywords" content="quotidiano, news, notizie">
     <meta name="viewport" content="width=device-width" initial-scale="1.0" maximum-scale="1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu-button").click(function(){
+                $("#sidebar").toggle();
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -22,7 +30,7 @@
 
         <div class="navbar1">
             <ul id="menu-primary">
-                <li><a href="#"><img src="images/menu-lines-svgrepo-com.svg" width="20px" height="16px" alt="menu-lines"><span></span></a></li>
+                <li><button id="menu-button"><img src="images/menu-lines-svgrepo-com.svg" width="20px" height="16px" alt="menu-lines"></button></li>
                 <li><a href="#" title="Search"><img src="images/search-svgrepo-com.svg" width="20px" height="18px" alt="search"></a></li>
                 <li><a href="#" title="Acquista">Acquista il giornale</a></li>
             </ul>
@@ -32,6 +40,8 @@
                 <li><a href="#" title="Abbonati">Abbonati</a></li>
                 <li><a><img src="images/up-arrow-svgrepo-com.svg" width="20" height="20px" style="transform:rotate(90deg)" alt="arrow"></a></li>
             </ul>
+
+
         </div>
 
         <div>
@@ -69,6 +79,69 @@
             </ul>
         </div>
     </header>
+</div>
+
+<div id="sidebar">
+    <div>
+        <button><img src="images/x-svgrepo-com.svg" width="25px" height="25px" alt="X"></button>
+        <div id="search">
+            <img src="images/search-svgrepo-com.svg" width="15px" height="15px" alt="search">
+            <p>Cerca articoli, autori, argomenti...</p>
+        </div>
+    </div>
+    <div id="main-menu">
+        <ul>
+            <li><a href="#">Accedi</a></li>
+            <li><a href="#">Abbonati ora a € 3,00</a><img src="images/up-arrow-svgrepo-com.svg"  width="20" height="20px" style="transform:rotate(90deg)" alt="arrow"></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+    </div>
+    <div id="menu-group">
+        <div class="sections-menu">
+            <h6>Sezioni</h6>
+            <ul>
+                <li><a href="#">Cronaca</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Cosa fare</a></li>
+                <li><a href="#">Politica</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Spettacoli</a></li>
+            </ul>
+        </div>
+        <div class="sections-menu">
+            <h6>Speciali</h6>
+            <ul>
+                <li><a href="#">Città future</a></li>
+                <li><a href="#">Top aziende</a></li>
+                <li><a href="#">Cronisti in classe</a></li>
+                <li><a href="#">Premio Mascagni</a></li>
+                <li><a href="#">Top 500 Bologna</a></li>
+                <li><a href="#">Alfasigma</a></li>
+                <li><a href="#">Giro d'Italia</a></li>
+            </ul>
+        </div>
+        <div class="sections-menu">
+            <h6>Network</h6>
+            <ul>
+                <li><a href="#">Quotidiano Nazionale</a></li>
+                <li><a href="#">La Nazione</a></li>
+                <li><a href="#">Motori</a></li>
+                <li><a href="#">Pronto Imprese</a></li>
+                <li><a href="#">Pinkitalia</a></li>
+                <li><a href="#">Ubitennis</a></li>
+                <li><a href="#">Prodotti Migliori</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="newspaper-menu">
+        <ul>
+            <li><a href="#">Quotidiano Nazionale</a></li>
+            <li><a href="#">La Nazione</a></li>
+            <li><a href="#">Motori</a></li>
+            <li><a href="#">Pronto Imprese</a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="main-container">
@@ -332,9 +405,23 @@
     </div>
 
     <div id="footer-informations">
-
+        <div id="copyright-container">
+            <p>Copyright &copy; Example.com 2021</p>
+        </div>
+        <div id="privacy">
+            <ul>
+                <li><a href="#">Dati societari</a></li>
+                <li><a href="#">ISSN</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Impostazione Privacy</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
+
+<div id="bell">
+    <a href="#"><img src="images/bell-svgrepo-com.svg" width="30px" height="30px" alt="bell"></a>
+</div>
 
 </body>
 </html>
