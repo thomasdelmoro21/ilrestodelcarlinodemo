@@ -648,10 +648,12 @@
 
 #sidebar {
     width: 380px;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     border-right: 1px solid #dddddd;
+    display: block;
 }
 
 #sidebar button {
@@ -713,6 +715,36 @@
     padding-top: 12px;
     margin-right:20px;
     border: none;
+}
+
+#menu-group {
+    display:flex;
+}
+
+.sections-menu {
+    background-color: #edf5ff;
+    border-bottom: 1px solid #dddddd;
+    padding: 30px;
+    display: block;
+}
+
+.sections-title h6 {
+    color: #96a8cf;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.sections-menu ul li {
+    list-style-type: none;
+}
+
+.sections-menu ul li a {
+    display:block;
+    width: 120px;
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
 }
 
 /* start SIDEBAR RULES */
