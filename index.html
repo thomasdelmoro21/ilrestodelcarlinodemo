@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("#menu-button").click(function(){
+            $(".menu-button").click(function(){
                 $("#sidebar").toggle();
             });
         });
@@ -37,7 +37,7 @@
 
         <div class="navbar1">
             <ul id="menu-primary">
-                <li><button id="menu-button"><img src="images/menu-lines-svgrepo-com.svg" width="20px" height="16px" alt="menu-lines"></button></li>
+                <li><button class="menu-button"><img src="images/menu-lines-svgrepo-com.svg" width="20px" height="16px" alt="menu-lines"></button></li>
                 <li><a href="#" title="Search"><img src="images/search-svgrepo-com.svg" width="20px" height="18px" alt="search"></a></li>
                 <li><a href="#" title="Acquista">Acquista il giornale</a></li>
             </ul>
@@ -51,8 +51,10 @@
 
         </div>
 
-        <div>
+        <div class="main-header">
+            <button class="menu-button"><img src="images/menu-lines-svgrepo-com.svg" width="20px" height="16px" alt="menu-lines"></button>
             <h1>il Resto del Carlino</h1>
+            <a class="search" href="#" title="Search"><img src="images/search-svgrepo-com.svg" width="20px" height="18px" alt="search"></a>
             <div class="weather">
                 <ul>
                     <li><a href="#" title="Weather"><img src="images/sun-svgrepo-com.svg" width="20px" height="20px" alt="sun"></a></li>
@@ -63,7 +65,7 @@
 
         <div class="main-navbar">
             <ul>
-                <li><a id="citta" href="#" title="Città"><img src="images/maps-and-flags-pin-svgrepo-com.svg" alt="map tag" width="13px" height="13px"> Città</a></li>
+                <li><a class="citta" href="#" title="Città"><img src="images/maps-and-flags-pin-svgrepo-com.svg" alt="map tag" width="13px" height="13px"> Città</a></li>
                 <li><a href="#" title="Cronaca">Cronaca</a></li>
                 <li><a href="#" title="Sport">Sport</a></li>
                 <li><a href="#" title="Cosa fare">Cosa fare</a></li>
@@ -77,6 +79,7 @@
 
         <div class="news-navbar">
             <ul>
+                <li><a class="citta" href="#" title="Città"><img src="images/maps-and-flags-pin-svgrepo-com.svg" alt="map tag" width="12px" height="12px"> Città</a></li>
                 <li><a href="#">Bonus tende e zanzariere</a></li>
                 <li><a href="#">Covid oggi</a></li>
                 <li><a href="#">Nozze Magnini Palmas</a></li>
@@ -401,20 +404,20 @@
         </div>
 
         <div id="right-footer-content">
-            <div>
-                <ul>
+            <div id="footer-grid">
+                <ul class="footer-first-column">
                     <li class="list-header">CATEGORIE</li>
                     <li><a href="#">Contatti</a></li>
                     <li><a href="#">Lavora Con Noi</a></li>
                     <li><a href="#">Concorsi</a></li>
                 </ul>
-                <ul>
+                <ul class="footer-second-column">
                     <li class="list-header">ABBONAMENTI</li>
                     <li><a href="#">Digitale</a></li>
                     <li><a href="#">Cartaceo</a></li>
                     <li><a href="#">Offerte promozionali</a></li>
                 </ul>
-                <ul>
+                <ul class="footer-third-column">
                     <li class="list-header">PUBBLICITÀ</li>
                     <li><a href="#">Speed Adv</a></li>
                     <li><a href="#">Network</a></li>
