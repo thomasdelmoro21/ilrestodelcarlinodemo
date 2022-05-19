@@ -657,7 +657,21 @@
     border-right: 1px solid #dddddd;
     display: block;
     background-color: white;
-    overflow: auto;
+    overflow: scroll;
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 #sidebar button {
