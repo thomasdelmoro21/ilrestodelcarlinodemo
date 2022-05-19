@@ -655,7 +655,7 @@
     left: 0;
     bottom: 0;
     border-right: 1px solid #dddddd;
-    display: block;
+    display: none;
     background-color: white;
     overflow: scroll;
     animation: slide 1s;
