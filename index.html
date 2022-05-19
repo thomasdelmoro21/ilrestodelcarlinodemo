@@ -15,6 +15,13 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $("#sidebar-button").click(function(){
+                $("#sidebar").toggle();
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -83,7 +90,7 @@
 
 <div id="sidebar">
     <div>
-        <button><img src="images/x-svgrepo-com.svg" width="25px" height="25px" alt="X"></button>
+        <button id="sidebar-button"><img src="images/x-svgrepo-com.svg" width="25px" height="25px" alt="X"></button>
         <div id="search">
             <img src="images/search-svgrepo-com.svg" width="15px" height="15px" alt="search">
             <p>Cerca articoli, autori, argomenti...</p>
@@ -151,10 +158,11 @@
     </div>
     <div id="newspaper-menu">
         <ul>
-            <li><a href="#">Quotidiano Nazionale</a></li>
+            <li><a href="#">QUOTIDIANO NAZIONALE</a></li>
             <li><a href="#">La Nazione</a></li>
             <li><a href="#">Motori</a></li>
             <li><a href="#">Pronto Imprese</a></li>
+            <li><a href="#">IL TELEGRAFO</a></LI>
         </ul>
     </div>
 </div>

@@ -648,12 +648,16 @@
 
 #sidebar {
     width: 380px;
+    height: auto;
     position: fixed;
-    z-index: 1;
+    z-index: 50;
     top: 0;
     left: 0;
+    bottom: 0;
     border-right: 1px solid #dddddd;
     display: block;
+    background-color: white;
+    overflow: auto;
 }
 
 #sidebar button {
@@ -718,33 +722,73 @@
 }
 
 #menu-group {
-    display:flex;
+    max-width: 380px;
 }
 
 .sections-menu {
     background-color: #edf5ff;
     border-bottom: 1px solid #dddddd;
-    padding: 30px;
+    padding: 30px 30px 15px 30px;
     display: block;
+    height: 200px;
+    clear: both;
 }
 
 .sections-title h6 {
     color: #96a8cf;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
-    box-sizing: border-box;
+    display: block;
 }
 
 .sections-menu ul li {
     list-style-type: none;
+    width: 130px;
+    text-align: left;
+    display: block;
+    float: left;
+    margin: 20px 20px 0 0;
 }
 
 .sections-menu ul li a {
-    display:block;
-    width: 120px;
-    float: left;
+    text-decoration: none;
+    color: #393939;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sections-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#newspaper-menu ul {
     list-style-type: none;
-    padding-right: 10px;
+}
+
+#newspaper-menu ul li {
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+#newspaper-menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding-top: 15px;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #005ac8;
+}
+
+#newspaper-menu ul li:first-child a {
+    font-family: Helvetica, sans-serif;
+}
+
+#newspaper-menu ul li:nth-child(2) a {
+    font-family: "Times New Roman", serif;
+    font-weight: 600;
 }
 
 /* start SIDEBAR RULES */
