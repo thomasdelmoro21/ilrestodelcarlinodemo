@@ -204,7 +204,56 @@
     color: #ee3840;
 }
 
+.drop-button {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
 /*end MAIN-NAVBAR RULES*/
+
+/* start DROP DOWN MENU RULES */
+
+.drop-down-menu {
+    display: none;
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    width: 200px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 5px;
+}
+
+.drop-down-menu ul {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.drop-down-menu ul li {
+    padding: 6px;
+}
+
+.drop-down-menu ul li a:link, .drop-down-menu ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.drop-down-menu ul li a:hover {
+    color: #005ac8;
+}
+
+/* end DROP DOWN MENU RULES */
 
 /*start NEWS-NAVBAR RULES*/
 

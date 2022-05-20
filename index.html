@@ -22,6 +22,13 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".drop-button").click(function(){
+                $(".drop-down-menu").toggle();
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -73,7 +80,19 @@
                 <li><a href="#" title="Economia">Economia</a></li>
                 <li><a href="#" title="Cultura">Cultura</a></li>
                 <li><a href="#" title="Spettacoli">Spettacoli</a></li>
-                <li><a href="#" title="Speciali">Speciali <img src="images/up-other-arrow-svgrepo-com.svg" alt="arrow" width="11px" height="11px" style="transform:rotate(180deg)"></a></li>
+                <li><a href="#" title="Speciali"><button class="drop-button">Speciali <img src="images/up-other-arrow-svgrepo-com.svg" alt="arrow" width="11px" height="11px" style="transform:rotate(180deg)"></button></a></li>
+            </ul>
+        </div>
+        <div class="drop-down-menu">
+            <ul>
+                <li><a href="#">Città Future</a></li>
+                <li><a href="#">Top Aziende</a></li>
+                <li><a href="#">Cronisti in classe</a></li>
+                <li><a href="#">Premio Mascagni</a></li>
+                <li><a href="#">Aste e Tribunali</a></li>
+                <li><a href="#">Alfasigma</a></li>
+                <li><a href="#">Giro d'Italia</a></li>
+                <li><a href="#">Motori</a></li>
             </ul>
         </div>
 
