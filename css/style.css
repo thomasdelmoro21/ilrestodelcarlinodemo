@@ -4,15 +4,15 @@
     padding: 0;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 /* start ADVERTISE RULES */
 
 .advertise {
     display: flex;
     justify-content: center;
+}
+
+.advertise img {
+    max-width: 1024px;
 }
 
 /* start ADVERTISE RULES */
@@ -270,25 +270,34 @@ body {
 /*start NEWS-NAVBAR RULES*/
 
 .news-navbar {
-    display: flex;
     justify-content: center;
-    height: 45px;
     border-top: 1px solid #dddddd;
+    display: flex;
+    overflow: hidden;
+    line-height: 1.70;
+    width: 100%;
 }
 
 .news-navbar ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
     font-size: 14px;
     font-weight: bold;
     font-family: Inter, sans-serif;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: auto;
     margin-bottom: auto;
+    max-height: 20px;
+    padding: 12px 0 12px 0;
 }
 
 .news-navbar ul li {
-    padding: 6px;
+    display: list-item;
+    padding: 0 6px 0;
+    white-space: nowrap;
 }
 
 .news-navbar ul li:first-child {
@@ -315,9 +324,9 @@ body {
 /*start MAIN-CONTAINER RULES*/
 
 .main-container {
-    width: 978px;
+    max-width: 978px;
+    width: 100%;
     font-family: Roboto, sans-serif;
-    align-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 22px 22px 100px;
@@ -325,17 +334,18 @@ body {
     overflow: auto;
 }
 
-.main-container::-webkit-scrollbar {
-    display: none;
-}
-
 #advertise {
     align-content: center;
     margin-bottom: 22px;
 }
+#advertise img {
+    width: 100%;
+    max-width: 978px;
+}
 
 .left-container {
-    width: 660px;
+    max-width: 660px;
+    width: 67%;
     margin-right: 20px;
     float:left;
 }
@@ -344,8 +354,11 @@ body {
 }
 
 .right-container {
-    width: 298px;
+    width: 30%;
     float: left;
+}
+.right-container img {
+    width: 100%;
 }
 
 /*end MAIN-CONTAINER RULES*/
@@ -435,21 +448,24 @@ body {
 .left-small-article {
     border-bottom: 1px solid #dddddd;
     margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .left-small-article img {
     display: block;
-    width: 330px;
+    max-width: 330px;
     margin-bottom: 15px;
+    float: left;
+    width: 49%;
 }
 
 .small-article-content {
-    padding-left: 15px;
+    padding-left: 1.5%;
     display: block;
-    width: 315px;
+    max-width: 315px;
     margin-bottom: 15px;
+    float: left;
+    width: 49%;
 }
 
 .small-category {
@@ -563,7 +579,6 @@ body {
 }
 
 #footer-informations {
-    height:48px;
     background-color: #0250b0;
 }
 
@@ -687,6 +702,7 @@ body {
 #footer-informations {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #copyright-container {
@@ -701,6 +717,7 @@ body {
 #privacy {
     display: block;
     margin-right: 30px;
+    padding-left: 20px;
 }
 
 #privacy ul {
@@ -852,7 +869,6 @@ body {
     background-color: #edf5ff;
     border-bottom: 1px solid #dddddd;
     padding: 30px 30px 15px 30px;
-    display: block;
     height: 200px;
     clear: both;
 }
@@ -864,12 +880,16 @@ body {
     display: block;
 }
 
+.sections-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .sections-menu ul li {
     list-style-type: none;
-    width: 130px;
+    width: 40%;
     text-align: left;
     display: block;
-    float: left;
     margin: 20px 20px 0 0;
 }
 
@@ -965,14 +985,14 @@ body {
 
     .news-navbar {
         background-color: #e9f3ff;
-        width: 1024px;
     }
 
     .news-navbar ul {
         font-size: 15px;
     }
-    .news-navbar ul li {
-        padding-top: 5px;
+
+    .news-navbar ul li:nth-child(2) {
+        margin-left: 100px;
     }
     .news-navbar a:link, .news-navbar a:visited {
         text-decoration: none;
@@ -1094,8 +1114,12 @@ body {
 
     #newspapers-links {
         display: grid;
-        grid-template-columns: 200px 200px;
+        grid-template-columns: 50% 50%;
         justify-content: space-between;
+    }
+
+    #society {
+        padding-left: 10px;
     }
 
     #quot-naz {
@@ -1104,6 +1128,7 @@ body {
 
     #nazione {
         text-align: left;
+        font-size: 16px;
     }
 
     #giorno {
@@ -1142,7 +1167,7 @@ body {
     }
 
     .sections-menu {
-        height: 120px;
+
     }
 
 }
