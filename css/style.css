@@ -837,7 +837,7 @@ body {
 }
 
 #menu-group {
-    max-width: 380px;
+    width: 100%;
 }
 
 .sections-menu {
@@ -1123,6 +1123,14 @@ body {
         color: #95bbe8;
         font-weight: bold;
         padding-top: 20px;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .sections-menu {
+        height: 120px;
     }
 
 }
