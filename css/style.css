@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* start ADVERTISE RULES */
 
 .advertise {
@@ -313,6 +317,10 @@
     overflow: auto;
 }
 
+.main-container::-webkit-scrollbar {
+    display: none;
+}
+
 #advertise {
     align-content: center;
     margin-bottom: 22px;
@@ -322,6 +330,9 @@
     width: 660px;
     margin-right: 20px;
     float:left;
+}
+.left-container img {
+    width:100%;
 }
 
 .right-container {
@@ -540,7 +551,7 @@
     background-color: #005ac7;
     padding: 45px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #footer-informations {
@@ -551,8 +562,9 @@
 #left-footer-content {
     display: block;
     text-align: center;
-    height: 170px;
-    margin-right: 200px;
+    height: 130px;
+    width: 600px;
+    flex-wrap: wrap;
 }
 
 #footer-title {
@@ -585,36 +597,44 @@
 
 #newspapers-links {
     padding-top: 10px;
+    display: flex;
+    justify-content: left;
 }
 
 #newspapers-links a:link, #newspapers-links a:hover, #newspapers-links a:visited {
     text-decoration: none;
     color: #004aa6;
-    padding: 0 5px;
+    padding: 0 10px 0 0;
 }
 
 #quot-naz {
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
+    display: block;
+    padding-top: 5px;
 }
 
 #giorno {
     font-family: "Times New Roman", serif;
     font-size: 20px;
     font-weight: bold;
+    display: block;
 }
 
 #nazione {
     font-family: Garamond, serif;
     font-size: 21px;
     font-weight: bold;
+    display: block;
 }
 
 #telegrafo {
     font-family: Antiqua, serif;
     font-size: 16px;
     font-weight: bold;
+    display: block;
+    padding-top: 4px;
 }
 
 #right-footer-content {
@@ -623,6 +643,7 @@
 
 #footer-grid {
     display:flex;
+    justify-content: center;
 }
 
 .footer-first-column, .footer-second-column, .footer-third-column {
@@ -649,6 +670,10 @@
 
 .list-header {
     color: #8db5e6;
+}
+
+.mobile-footer {
+    display: none;
 }
 
 #footer-informations {
@@ -690,7 +715,7 @@
     text-decoration: underline;
 }
 
-/* start FOOTER RULES */
+/* end FOOTER RULES */
 
 /* start BELL RULES */
 
@@ -887,6 +912,15 @@
 
 @media screen and (max-width: 1024px){
 
+    .advertise{
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .header-container {
+        height: 250px;
+    }
+
     #menu-primary li:first-child, #menu-primary li:nth-child(2){
         display: none;
     }
@@ -930,11 +964,11 @@
         font-size: 15px;
     }
     .news-navbar ul li {
-        padding-top: 15px;
+        padding-top: 5px;
     }
     .news-navbar a:link, .news-navbar a:visited {
         text-decoration: none;
-        color: black;
+        color: #1f1f1f;
     }
     .news-navbar ul li a:hover {
         color: #005ac7;
@@ -947,12 +981,27 @@
         padding-right: 8px;
         color: #005ac8;
     }
+
+    #footer-content {
+        display: block;
+    }
+
+    #left-footer-content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #right-footer-content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    .advertise {
-        display: none;
+    .header-container {
+        height: 200px;
     }
 
     .header1 {
@@ -998,6 +1047,84 @@
     .main-header .search {
         padding-top: 15px;
     }
+
+    #advertise {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 660px;
+        border: 0;
+        padding: 0 0 100px;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .left-small-article {
+        display: none;
+    }
+
+    #footer-content {
+        padding: 45px 0 0;
+    }
+
+    #left-footer-content {
+        margin: 0 auto 0;
+        max-width: 100%;
+    }
+
+    #newspapers-links {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        justify-content: space-between;
+    }
+
+    #quot-naz {
+        text-align: left;
+    }
+
+    #nazione {
+        text-align: left;
+    }
+
+    #giorno {
+        text-align: right;
+    }
+
+    #telegrafo {
+        text-align: right;
+    }
+
+    #footer-grid {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        margin: 0 5% 0;
+    }
+
+    .footer-drop-menu {
+        display: block;
+        height: 50px;
+        border-bottom: 1px solid #95bbe8;
+        cursor: pointer;
+    }
+    .footer-drop-menu h6 {
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        color: #95bbe8;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
 }
 
 /* start MEDIA QUERIES */
