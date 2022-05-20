@@ -949,4 +949,55 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .advertise {
+        display: none;
+    }
+
+    .header1 {
+        display: none;
+    }
+
+    .navbar1 {
+        height: 40px;
+        background-color: #005ac7;
+        border-bottom: 2px solid #0250b0;
+    }
+
+    #menu-primary li {
+        padding-top: 10px;
+    }
+
+    #menu-secondary li {
+        margin-top: 10px;
+    }
+
+    .navbar1 a:link, .navbar1 a:visited {
+        color: white;
+        font-size: 17px;
+    }
+
+    .navbar1 a:hover {
+        text-decoration: underline;
+    }
+
+    .main-header {
+        background-color: #005ac7;
+    }
+
+    .main-header .menu-button {
+        background-color: #005ac7;
+    }
+
+    .main-header h1 {
+        color: white;
+        font-size: 25px;
+    }
+
+    .main-header .search {
+        padding-top: 15px;
+    }
+}
+
 /* start MEDIA QUERIES */
