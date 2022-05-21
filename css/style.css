@@ -325,7 +325,6 @@
 
 .main-container {
     max-width: 978px;
-    width: 100%;
     font-family: Roboto, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -820,6 +819,10 @@
 #search img {
     float: left;
     padding-right: 20px;
+}
+
+#main-menu ul {
+    list-style-type: none;
 }
 
 #main-menu ul li {
